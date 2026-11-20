@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثبت درخواست | DarkRoom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+    color: white;
+    background:
+    radial-gradient(circle at top, #242052, transparent 55%),
+    linear-gradient(135deg, #070914, #101a30);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #294a63;
+    background: linear-gradient(145deg,#17233c,#0c1223);
+    box-shadow: 0 0 45px #00d9ff18;
+    animation: appear .7s ease;
+}
+
+.check {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 0 18px #20e6a0);
+}
+
+.check svg {
+    width: 100%;
+}
+
+.circle {
+    fill: #20e6a015;
+    stroke: #20e6a0;
+    stroke-width: 4;
+}
+
+.tick {
+    fill: none;
+    stroke: #20e6a0;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw .8s .5s forwards;
+}
+
+h1 {
+    color: #20e6a0;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.time {
+    font-size: 27px;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px 0 5px;
+}
+
+.email {
+    color: #c4d2e5;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.telegram {
+    margin-top: 30px;
+    padding: 22px 15px;
+    border-radius: 18px;
+    border: 1px solid #e8bd48;
+    background: #e8bd4810;
+}
+
+.telegram p {
+    color: #ffdf76;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 2;
+    margin: 0 0 12px;
+}
+
+.channel {
+    color: white;
+    direction: ltr;
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.telegram a {
+    display: block;
+    max-width: 380px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    background: linear-gradient(100deg,#168bd0,#229ed9);
+    box-shadow: 0 7px 25px #229ed955;
+    transition: .3s;
+}
+
+.telegram a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #229ed977;
+}
+
+@keyframes draw {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 { font-size: 26px; }
+    .time { font-size: 23px; }
+    .telegram p { font-size: 16px; }
+    .check { width: 105px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="check">
+        <svg viewBox="0 0 100 100">
+            <circle class="circle" cx="50" cy="50" r="44"/>
+            <path class="tick" d="M25 51 L42 68 L76 32"/>
+        </svg>
+    </div>
+
+    <h1>درخواست ثبت شد!</h1>
+
+    <div class="time">
+        ۱ تا ۲۴ ساعت دیگر
+    </div>
+
+    <div class="email">
+        نتیجه از طریق جیمیل برای شما ارسال می‌شود.
+    </div>
+
+    <div class="telegram">
+
+        <p>
+            جهت اطلاع از وضعیت سایت و پیگیری وضعیت چنج اکانت خود وارد کانال تلگرام زیر شوید.
+        </p>
+
+        <div class="channel">
+            @DarkRoom_hub
+        </div>
+
+        <a href="https://t.me/DarkRoom_hub"
+           target="_blank"
+           rel="noopener noreferrer">
+            ✈ ورود به کانال تلگرام
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
